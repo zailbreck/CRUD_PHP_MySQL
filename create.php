@@ -3,11 +3,12 @@
 include 'koneksi.php';
 $nama = $_POST['nama'];
 $nim = $_POST['nim'];
+$email = $_POST['email'];
 $jurusan = $_POST['jurusan'];
 $angkatan = $_POST['angkatan'];
 $gambar = $_POST['gambar'];
 
-  $query = mysqli_query($conn,"INSERT INTO mahasiswa VALUES('','$nama','$nim','$jurusan','$angkatan','gambar')");
+  $query = mysqli_query($conn,"INSERT INTO mahasiswa VALUES('','$nama','$nim','email','$jurusan','$angkatan','gambar')");
   if($query){
     header("Location:input.php?input=berhasil");
   }else{

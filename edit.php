@@ -32,6 +32,10 @@
                <input type="text" class="form-control" name="nim" value="<?= $data['nim'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
+               <label for="nim">Email</label>
+               <input type="text" class="form-control" name="email" value="<?= $data['email'];?>">
+         </div>
+         <div class="form-group col-md-4 col-md-offset-5 align-center">
                <label for="jurusan">Jurusan</label>
                <input type="text" class="form-control" name="jurusan" value="<?= $data['jurusan'];?>">
          </div>

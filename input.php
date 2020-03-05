@@ -8,7 +8,9 @@
   <body>
     <div class="jumbotron bg-info text-white">
       <div class="container container-fluid text-center">
-        <h1 class="display-6">REGISTRASI MAHASISWA</h1>
+        <h1 class="display-6">========================</h1>
+        <h1 class="display-6">~ REGISTRASI MAHASISWA ~</h1>
+        <h1 class="display-6">========================</h1>
         <p class="lead">Melakukan input data mahasiswa</p>
       </div>
     </div>
@@ -23,6 +25,10 @@
         <div class="form-group col-md-4 col-md-offset-5 align-center">
               <label for="nim">NIM</label>
               <input type="text" class="form-control" name="nim" required>
+        </div>
+         <div class="form-group col-md-4 col-md-offset-5 align-center">
+              <label for="nim">Email</label>
+              <input type="text" class="form-control" name="email" required>
         </div>
         <div class="form-group col-md-4 col-md-offset-5 align-center">
               <label for="jurusan">Jurusan</label>
@@ -39,17 +45,24 @@
       </form>
     </div>
   </body>
-</html>
-
-<?php
+  <?php
 if (isset($_GET['input'])) {
     $pesan = $_GET['input'];
     if ($pesan == "berhasil") {
-      echo "Data berhasil di input.";
+     ?>
+      <script>alert('Data berhasil Diinput')</script>
+      <?php
     }else if($pesan == "gagal"){
-      echo "Data Gagal di input.";
+      ?>
+      <script>alert('Data Gagal di input')</script>
+    <?php
     }else if($pesan == "hapus"){
-      echo "Data berhasil di hapus";
+      ?>  
+      <script>alert('Data berhasil di hapus')</script>
+      <?php
     }
 }
  ?>
+
+</html>
+
