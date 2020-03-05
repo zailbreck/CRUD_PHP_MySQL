@@ -1,6 +1,6 @@
 <?php
-$server = "localhost";
-$database = "test";
+$server = "localhost:3307";
+$database = "crud_php";
 $username = "root";
 $password = "";
 
