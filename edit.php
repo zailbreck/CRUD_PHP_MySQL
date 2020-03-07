@@ -19,31 +19,31 @@
     include 'koneksi.php';
     $id = $_GET['id'];
     $query_mysql = mysqli_query($conn,"SELECT * FROM mahasiswa WHERE id='$id'") or die(mysql_error());
-    while($data = mysqli_fetch_array($query_mysql)){
+    while($d = mysqli_fetch_array($query_mysql)){
      ?>
 
      <div class="col-lg-6">
        <form action="update.php" method="post">
          <div class="form-group col-md-4 col-md-offset-5 align-center">
            <label for="nama">Nama</label>
-           <input type="hidden" name="id" value="<?= $data['id'];?>">
-           <input type="text" class="form-control" name="nama" value="<?= $data['nama'];?>">
+           <input type="hidden" name="id" value="<?= $d['id'];?>">
+           <input type="text" class="form-control" name="nama" value="<?=$d['nama'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
                <label for="nim">NIM</label>
-               <input type="text" class="form-control" name="nim" value="<?= $data['nim'];?>">
+               <input type="text" class="form-control" name="nim" value="<?= $d['nim'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
                <label for="email">Email</label>
-               <input type="text" class="form-control" name="email" value="<?= $data['email'];?>">
+               <input type="text" class="form-control" name="email" value="<?= $d['email'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
                <label for="jurusan">Jurusan</label>
-               <input type="text" class="form-control" name="jurusan" value="<?= $data['jurusan'];?>">
+               <input type="text" class="form-control" name="jurusan" value="<?= $d['jurusan'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
                <label for="angkatan">Angkatan</label>
-               <input type="text" class="form-control" name="angkatan" value="<?= $data['angkatan'];?>">
+               <input type="text" class="form-control" name="angkatan" value="<?= $d['angkatan'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
                <input type="submit" name="edit" value="Save" class="btn btn-primary">

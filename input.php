@@ -39,7 +39,7 @@
               <input type="text" class="form-control" name="angkatan">
         </div>
         <div class="form-group col-md-4 col-md-offset-5 align-center">
-              <label for="angkatan">Gambar</label>
+              <label for="gambar">Gambar</label>
               <input type="file" class="form-control" name="gambar">
         </div>
         <div class="form-group col-md-4 col-md-offset-5 align-center">
