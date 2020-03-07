@@ -17,7 +17,7 @@
 
 
     <div class="col-lg-6">
-      <form action="create.php" method="post">
+      <form action="create.php" method="post" enctype="multipart/form-data">
         <div class="form-group col-md-4 col-md-offset-5 align-center">
           <label for="nama">Nama</label>
           <input type="text" class="form-control" name="nama" required>
@@ -27,7 +27,7 @@
               <input type="text" class="form-control" name="nim" required>
         </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
-              <label for="nim">Email</label>
+              <label for="email">Email</label>
               <input type="text" class="form-control" name="email" required>
         </div>
         <div class="form-group col-md-4 col-md-offset-5 align-center">
@@ -37,6 +37,10 @@
         <div class="form-group col-md-4 col-md-offset-5 align-center">
               <label for="angkatan">Angkatan</label>
               <input type="text" class="form-control" name="angkatan">
+        </div>
+        <div class="form-group col-md-4 col-md-offset-5 align-center">
+              <label for="angkatan">Gambar</label>
+              <input type="file" class="form-control" name="gambar">
         </div>
         <div class="form-group col-md-4 col-md-offset-5 align-center">
               <input type="Submit" name="input" value="Submit" class="btn btn-primary">

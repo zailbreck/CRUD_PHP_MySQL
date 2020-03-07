@@ -8,7 +8,9 @@
   <body>
     <div class="jumbotron bg-info text-white">
       <div class="container container-fluid text-center">
-        <h1 class="display-6">Tugas RG WEB SEA CRUD dengan PHP dan MySQL</h1>
+        <h1 class="display-6">=======================</h1>
+        <h1 class="display-6">~ Edit Data Mahasiswa ~</h1>
+        <h1 class="display-6">=======================</h1>
         <p class="lead">Mengubah Data Mahasiswa</p>
       </div>
     </div>
@@ -32,7 +34,7 @@
                <input type="text" class="form-control" name="nim" value="<?= $data['nim'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
-               <label for="nim">Email</label>
+               <label for="email">Email</label>
                <input type="text" class="form-control" name="email" value="<?= $data['email'];?>">
          </div>
          <div class="form-group col-md-4 col-md-offset-5 align-center">
